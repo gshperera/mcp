@@ -8,12 +8,18 @@ import asyncio
 
 load_dotenv()
 
+# MCP_SERVERS = {
+#     "file-service": {
+#         "transport": "stdio",  # Since we run all things (ex: servers) locally
+#         "command": "uv",
+#         "args": ["run", "mcp_file_service.py"],
+#         "cwd": ".",
+#     }
+# }
 MCP_SERVERS = {
     "file-service": {
-        "transport": "stdio",  # Since we run all things (ex: servers) locally
-        "command": "uv",
-        "args": ["run", "mcp_file_service.py"],
-        "cwd": ".",
+        "url": "http://localhost:8000/mcp",  # hosted server url
+        "transport": "http",
     }
 }
 
