@@ -20,7 +20,11 @@ MCP_SERVERS = {
     "file-service": {
         "url": "http://localhost:8000/mcp",  # hosted server url
         "transport": "http",
-    }
+    },
+    "calc-service": {
+        "url": "http://localhost:8001/mcp",  # hosted server url
+        "transport": "http",
+    },
 }
 
 
